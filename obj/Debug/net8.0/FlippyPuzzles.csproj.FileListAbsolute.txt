@@ -1,0 +1,15 @@
+C:\Users\19318\Programs\Puzzles\FlippyPuzzles\bin\Debug\net8.0\FlippyPuzzles.exe
+C:\Users\19318\Programs\Puzzles\FlippyPuzzles\bin\Debug\net8.0\FlippyPuzzles.deps.json
+C:\Users\19318\Programs\Puzzles\FlippyPuzzles\bin\Debug\net8.0\FlippyPuzzles.runtimeconfig.json
+C:\Users\19318\Programs\Puzzles\FlippyPuzzles\bin\Debug\net8.0\FlippyPuzzles.dll
+C:\Users\19318\Programs\Puzzles\FlippyPuzzles\bin\Debug\net8.0\FlippyPuzzles.pdb
+C:\Users\19318\Programs\Puzzles\FlippyPuzzles\obj\Debug\net8.0\FlippyPuzzles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\19318\Programs\Puzzles\FlippyPuzzles\obj\Debug\net8.0\FlippyPuzzles.AssemblyInfoInputs.cache
+C:\Users\19318\Programs\Puzzles\FlippyPuzzles\obj\Debug\net8.0\FlippyPuzzles.AssemblyInfo.cs
+C:\Users\19318\Programs\Puzzles\FlippyPuzzles\obj\Debug\net8.0\FlippyPuzzles.csproj.CoreCompileInputs.cache
+C:\Users\19318\Programs\Puzzles\FlippyPuzzles\obj\Debug\net8.0\FlippyPuzzles.dll
+C:\Users\19318\Programs\Puzzles\FlippyPuzzles\obj\Debug\net8.0\refint\FlippyPuzzles.dll
+C:\Users\19318\Programs\Puzzles\FlippyPuzzles\obj\Debug\net8.0\FlippyPuzzles.pdb
+C:\Users\19318\Programs\Puzzles\FlippyPuzzles\obj\Debug\net8.0\FlippyPuzzles.genruntimeconfig.cache
+C:\Users\19318\Programs\Puzzles\FlippyPuzzles\obj\Debug\net8.0\ref\FlippyPuzzles.dll
+C:\Users\19318\Programs\Puzzles\FlippyPuzzles\obj\Debug\net8.0\FlippyPuzzles.sourcelink.json
