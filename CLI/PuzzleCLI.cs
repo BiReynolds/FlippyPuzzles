@@ -1,9 +1,12 @@
-namespace FlippyPuzzles {
+using Core;
+
+namespace CLI {
 	public class PuzzleCLI {
 		private bool IsRunning = true;
-		private FlippyPuzzleModel Puzzle = new FlippyPuzzleModel(3);
+		private FlippyPuzzleModel Puzzle;
 		public Dictionary<string, Action> SpecialCommands = new();
-		public PuzzleCLI() {
+		public PuzzleCLI(FlippyPuzzleModel puzzle) {
+			Puzzle = puzzle;
 			SpecialCommands["exit"] = Exit;
 			SpecialCommands["reset"] = Puzzle.Reset;
 			SpecialCommands["scramble"] = ()=>{ Puzzle.Scramble(10); };
@@ -34,38 +37,11 @@ namespace FlippyPuzzles {
 				SpecialCommands[lowerInput]();
 				return;
 			}
-			char RowOrCol = ParseRowOrColFromString(rawInput);
-			int Index = ParseIndexFromString(lowerInput);
-			ApplyMove(RowOrCol, Index);
-		}
-		private char ParseRowOrColFromString(string inputString) {
-			char result = inputString[0];
-			if (result == 'r' || result == 'c') {
-				return result;
+			if (Puzzle.MoveDictionary.ContainsKey(lowerInput)) {
+				Puzzle.ApplyMove(rawInput);
 			}
 			else {
-				throw ExceptionCollection.BadMoveException(inputString);
-			}
-		}
-		private int ParseIndexFromString(string inputString) {
-			try {
-				return int.Parse(inputString[1..]);
-			} 
-			catch {
-				throw ExceptionCollection.BadMoveException(inputString);
-			}
-		}
-		private void ApplyMove(char rowOrCol, int index) {
-			if (index < 0 || index >= Puzzle.Dimensions) {
-				throw ExceptionCollection.IndexOutOfRangeException(index, Puzzle.Dimensions);
-			}
-			if (rowOrCol == 'r') {
-				Puzzle.FlipRow(index);
-				return;
-			} 
-			else {
-				Puzzle.FlipCol(index);
-				return;
+				Console.WriteLine($"Could not understand input {lowerInput}.");
 			}
 		}
 		public void Exit() {

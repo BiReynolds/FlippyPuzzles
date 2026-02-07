@@ -1,4 +1,4 @@
-namespace FlippyPuzzles {
+namespace Core {
 	public static class ExceptionCollection {
 		public static Exception BadMoveException(string moveString) {
 			return new Exception($"Could not understand move {moveString}.");
