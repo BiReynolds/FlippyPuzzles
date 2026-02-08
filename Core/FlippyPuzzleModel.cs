@@ -1,15 +1,17 @@
 namespace Core {
 	public class FlippyPuzzleModel {
 		public readonly Random RNG = new Random();
+		public readonly int[] SolvedState;
+		public readonly Dictionary<string, int[]> MoveDictionary;
 		public readonly int Dimensions;
 		public readonly int NumMoves;
-		public readonly Dictionary<string, int[]> MoveDictionary;
-		public readonly int[] SolvedState;
+		public readonly string[] MoveArray;
 		public int[] State;
 		public FlippyPuzzleModel(int dimensions, int[] solvedState, Dictionary<string, int[]> moveDict) {
 			Dimensions = dimensions;
 			SolvedState = solvedState;
 			MoveDictionary = moveDict;
+			MoveArray = moveDict.Keys.ToArray(); // We keep the MoveArray to have a record of the keys of our dictionary which is in a consistent order
 			NumMoves = moveDict.Keys.Count;
 			State = SolvedState;
 		}

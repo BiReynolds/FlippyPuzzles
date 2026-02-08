@@ -4,9 +4,11 @@ namespace CLI {
 	public class PuzzleCLI {
 		private bool IsRunning = true;
 		private FlippyPuzzleModel Puzzle;
+		public SourceGraphCLI SourceGraphCLI;
 		public Dictionary<string, Action> SpecialCommands = new();
 		public PuzzleCLI(FlippyPuzzleModel puzzle) {
 			Puzzle = puzzle;
+			SourceGraphCLI = new SourceGraphCLI(puzzle.MoveArray, puzzle.MoveDictionary);
 			SpecialCommands["exit"] = Exit;
 			SpecialCommands["reset"] = Puzzle.Reset;
 			SpecialCommands["scramble"] = ()=>{ Puzzle.Scramble(10); };
@@ -39,6 +41,12 @@ namespace CLI {
 			}
 			if (Puzzle.MoveDictionary.ContainsKey(lowerInput)) {
 				Puzzle.ApplyMove(rawInput);
+			}
+			string[] inputArray = lowerInput.Split(" ");
+			if (SourceGraphCLI.HandleInput(inputArray)) {
+				Console.Write("Press any key to continue... ");
+				Console.ReadKey();
+				Console.WriteLine();
 			}
 			else {
 				Console.WriteLine($"Could not understand input {lowerInput}.");
