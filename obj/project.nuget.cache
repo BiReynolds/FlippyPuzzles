@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "bwVUPg07WUuoaVUHG6Hzqlz2/MCFnPwhloaeA3aC4V0BfVTSViK45lWJIVNaIc6rQF89Pj6Ggw9EDdtHSoNdkg==",
+  "dgSpecHash": "n34d5uIw3Mw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\19318\\Programs\\Puzzles\\FlippyPuzzles\\FlippyPuzzles.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/workspaces/FlippyPuzzles/FlippyPuzzles.csproj",
+  "expectedPackageFiles": [
+    "/home/codespace/.nuget/packages/microsoft.netcore.app.ref/8.0.25/microsoft.netcore.app.ref.8.0.25.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.25/microsoft.aspnetcore.app.ref.8.0.25.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.25/microsoft.netcore.app.host.linux-x64.8.0.25.nupkg.sha512"
+  ],
   "logs": []
 }

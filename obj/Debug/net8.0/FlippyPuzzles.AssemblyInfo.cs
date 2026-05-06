@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FlippyPuzzles")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a129db9b3b4af62202385334a46cca781c690dd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be74b451aaacb2b50602262551fa07bb14f559c3")]
 [assembly: System.Reflection.AssemblyProductAttribute("FlippyPuzzles")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FlippyPuzzles")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
