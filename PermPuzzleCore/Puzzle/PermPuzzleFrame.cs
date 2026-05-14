@@ -2,10 +2,12 @@ namespace PermPuzzleCore
 {
     public class PermPuzzleFrame
     {
+        public readonly int Size;
         private readonly int[] Addresses;
         private int[] State;
         public PermPuzzleFrame(int N)
         {
+            Size = N;
             Addresses = PermHelper.CreateIdPerm(N);
             State = PermHelper.CreateIdPerm(N);
         }
@@ -39,9 +41,13 @@ namespace PermPuzzleCore
             }
             return true;
         }
+        public int[] GetSolvedState()
+        {
+            return Addresses[..];
+        }
         public int[] GetState()
         {
-            return State;
+            return State[..];
         }
     }
 }

@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/FlippyPuzzles/FlippyPuzzles.csproj": {}
+    "C:\\Users\\brrii\\Projects\\FlippyPuzzles\\FlippyPuzzles.csproj": {}
   },
   "projects": {
-    "/workspaces/FlippyPuzzles/FlippyPuzzles.csproj": {
+    "C:\\Users\\brrii\\Projects\\FlippyPuzzles\\FlippyPuzzles.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/FlippyPuzzles/FlippyPuzzles.csproj",
+        "projectUniqueName": "C:\\Users\\brrii\\Projects\\FlippyPuzzles\\FlippyPuzzles.csproj",
         "projectName": "FlippyPuzzles",
-        "projectPath": "/workspaces/FlippyPuzzles/FlippyPuzzles.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/FlippyPuzzles/obj/",
+        "projectPath": "C:\\Users\\brrii\\Projects\\FlippyPuzzles\\FlippyPuzzles.csproj",
+        "packagesPath": "C:\\Users\\brrii\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\brrii\\Projects\\FlippyPuzzles\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\brrii\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -57,15 +64,19 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.25, 8.0.25]"
+              "version": "[8.0.26, 8.0.26]"
             },
             {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[8.0.25, 8.0.25]"
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.26, 8.0.26]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.25, 8.0.25]"
+              "version": "[8.0.26, 8.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.26, 8.0.26]"
             }
           ],
           "frameworkReferences": {
@@ -73,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
