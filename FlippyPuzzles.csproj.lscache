@@ -53,29 +53,22 @@ TemporaryDependencyNodeTargetIdentifier=net8.0
 /warnaserror+:NU1605,SYSLIB0011
 
 [sourceFiles]
-CLI/PuzzleCLI.cs
-Core/
- ExceptionCollection.cs
- FlippyPuzzleFactory.cs
- FlippyPuzzleModel.cs
- MatrixHelper.cs
-Core2/
- ExceptionCollection.cs
- MatrixHelper.cs
- PermHelper.cs
- PermPuzzle.cs
- PermPuzzleFrame.cs
 obj/Debug/net8.0/
  .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
  FlippyPuzzles.AssemblyInfo.cs
  FlippyPuzzles.GlobalUsings.g.cs
+PermPuzzleCore/CLI/
+ PermPuzzleAPI.cs
+ PermPuzzleCoreCLI.cs
 PermPuzzleCore/
  PermHelper.cs
  Puzzle/
   IPuzzle.cs
   MaskMethodLayer.cs
   PermPuzzle.cs
+  PermPuzzleFactory.cs
   PermPuzzleFrame.cs
+  PermPuzzleTypeEnum.cs
  Solvers/
   ISolver.cs
   SolveSummary.cs

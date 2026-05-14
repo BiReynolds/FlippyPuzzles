@@ -23,7 +23,7 @@ namespace PermPuzzleCore
             return result;
         }
 
-        public static int[] CreateFlipPerm(int permLength, int flipIndex)
+        public static int[] CreateSwapPerm(int permLength, int flipIndex)
         {
             if (permLength <= 1)
             {

@@ -44,10 +44,10 @@ namespace PermPuzzleCore.Tests
             }
         }
 
-        public static void ShiftAndFlipTest(bool verbose = false)
+        public static void ShiftAndSwapTest(bool verbose = false)
         {
             PuzzleTrigger move0 = new(PermHelper.CreateShiftPerm(5));
-            PuzzleTrigger move1 = new(PermHelper.CreateFlipPerm(5, 0));
+            PuzzleTrigger move1 = new(PermHelper.CreateSwapPerm(5, 0));
             TriggerSet testSet = new([move0, move1], 15);
             if (verbose)
             {

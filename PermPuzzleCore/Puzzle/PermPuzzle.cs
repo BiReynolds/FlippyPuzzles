@@ -4,7 +4,7 @@ namespace PermPuzzleCore
     {
         public PermPuzzleFrame Frame;
         public List<int[]> MoveList = new();
-        public PermPuzzle(int N, IEnumerable<int[]> moveList, IEnumerable<string>? moveAliases = null)
+        public PermPuzzle(int N, IEnumerable<int[]> moveList)
         {
             AreInputsValid(N, moveList);
             Frame = new(N);
